@@ -1,0 +1,62 @@
+{"concept": {
+    "properties": {
+        "conceptTermGroup": {
+            "items": {
+                "properties": {
+                    "termName": {"type": "string"},
+                    "_primary": {
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "termDisplayName": {"type": "string"},
+                    "termStatus": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "termFlag": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "termLanguage": {
+                        "default": "",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "conceptRecordTypes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "conceptRecordType": {
+                "default": "",
+                "type": "string"
+              },
+              "_primary": {
+                "default": true,
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "updatedAtEnd": {"type": "date"},
+        "updatedBys": {
+            "items": {
+                "properties": {
+                    "_primary": {
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "updatedBy": {"type": "string"}
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "updatedAtStart": {"type": "date"}
+    },
+    "type": "object"
+}}
